@@ -181,8 +181,12 @@ function setupAudio() {
 		case '/usp.html':
             audioUrl = '/audio/USP.mp3';
             break;
-    }
+		default:
+			audioUrl = '/audio/main.mp3';
+			break;
 
+    }
+	
     // Cria o elemento de áudio a partir do URL correto
     audioElement = new Audio(audioUrl);
 }
