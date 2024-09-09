@@ -4165,49 +4165,59 @@ cover;
 	#mascote-circle {
 		cursor: pointer;
 		position: relative;
-		width: 150px; /* Aumentar o tamanho do círculo */
+		width: 150px; /* Tamanho padrão do círculo */
 		height: 150px;
-		background-color: #171820; /* Cor de fundo do círculo */
+		background-color: #171820;
 		border-radius: 50%;
-		border: 1px solid white; /* Borda branca de 1px */
+		border: 1px solid white;
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		overflow: hidden; /* Para garantir que o vídeo/imagem não ultrapasse o círculo */
+		overflow: hidden; /* Garante que o vídeo/imagem não ultrapasse o círculo */
 	}
 	
 	#mascote-img, #mascote-video {
-		width: 120px; /* Aumentar o tamanho da imagem e do vídeo dentro do círculo */
-		height: 120px;
 		border-radius: 50%; /* Garante que a imagem também seja circular */
 		object-fit: cover; /* Ajusta o conteúdo para se encaixar bem no círculo */
 	}
 	
-	#mascote-video {
-		display: none;
+	#mascote-img {
+		width: 120px; /* Tamanho padrão da imagem dentro do círculo */
+		height: 120px;
 	}
+	
+	#mascote-video {
+		display: none; /* Inicialmente oculto */
+		position: absolute; /* Ajusta a posição dentro do contêiner */
+		top: 0;
+		left: 0;
+		width: 100%; /* Ajusta a largura para o tamanho do contêiner */
+		height: 100%; /* Ajusta a altura para o tamanho do contêiner */
+		object-fit: cover; /* Mantém a proporção e evita distorções */
+	}
+	
 	/* Responsividade para tablets */
-@media (max-width: 768px) {
-    #mascote-circle {
-        width: 120px; /* Tamanho reduzido para tablets */
-        height: 120px;
-    }
-
-    #mascote-img, #mascote-video {
-        width: 100px; /* Tamanho reduzido para tablets */
-        height: 100px;
-    }
-}
-
-/* Responsividade para celulares */
-@media (max-width: 480px) {
-    #mascote-circle {
-        width: 100px; /* Tamanho ainda mais reduzido para celulares */
-        height: 100px;
-    }
-
-    #mascote-img, #mascote-video {
-        width: 80px; /* Tamanho reduzido para celulares */
-        height: 80px;
-    }
-}
+	@media (max-width: 768px) {
+		#mascote-circle {
+			width: 120px; /* Tamanho reduzido para tablets */
+			height: 120px;
+		}
+	
+		#mascote-img, #mascote-video {
+			width: 100px; /* Tamanho reduzido para tablets */
+			height: 100px;
+		}
+	}
+	
+	/* Responsividade para celulares */
+	@media (max-width: 480px) {
+		#mascote-circle {
+			width: 100px; /* Tamanho ainda mais reduzido para celulares */
+			height: 100px;
+		}
+	
+		#mascote-img, #mascote-video {
+			width: 80px; /* Tamanho reduzido para celulares */
+			height: 80px;
+		}
+	}
