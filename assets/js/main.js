@@ -167,7 +167,7 @@ function setupAudio() {
             audioUrl = '/audio/fgv.mp3';
             break;
 		case '/generic.html':
-			audioUrl = '/audio/gerenciaProjetosAudio.mp3';
+			audioUrl = '/audio/gerenciadeProjetos.mp3';
 			break;
 		case '/ibmec.html':
 			audioUrl = '/audio/MBA.mp3';
