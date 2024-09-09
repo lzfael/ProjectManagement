@@ -4182,7 +4182,7 @@ cover;
 		object-fit: cover;
 	}
 	 #mascote-video {
-		controls: none;
+	
 		width: 120px; /* Aumentar o tamanho da imagem e do vídeo dentro do círculo */
 		height: 120px;
 		border-radius: 50%; /* Garante que a imagem também seja circular */
@@ -4191,12 +4191,12 @@ cover;
 	
 	#mascote-video {
 		display: none;
-		controls: none;
+
 	}
 	/* Responsividade para tablets */
 @media (max-width: 768px) {
     #mascote-circle {
-		controls: none;
+		
         width: 120px; /* Tamanho reduzido para tablets */
         height: 120px;
     }
@@ -4215,7 +4215,6 @@ cover;
     }
 
     #mascote-img, #mascote-video {
-		controls: none;
         width: 80px; /* Tamanho reduzido para celulares */
         height: 80px;
     }
