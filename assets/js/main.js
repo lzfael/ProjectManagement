@@ -183,6 +183,9 @@ function setupAudio() {
 		case 'usp.html':
 			audioUrl = isFileProtocol ? 'audio/USP.mp3' : '/audio/USP.mp3';
 			break;
+		    default:
+			audioUrl = isFileProtocol ? 'audio/main.mp3' : '/audio/main.mp3';
+			break;
 	}
 
 
