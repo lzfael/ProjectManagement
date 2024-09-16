@@ -147,48 +147,48 @@
 let isPlaying = false;
 let audioElement;
 
-// Função para configurar o áudio com base na página atual
+
 function setupAudio() {
-    let page = window.location.pathname; // Obtém o caminho da URL atual
-    let audioUrl;
+	let page = window.location.pathname.split('/').pop();
+	let audioUrl;
 
-    // Verifica em qual página o usuário está e define o caminho do áudio correspondente
-    switch(page) {
-        case '/index.html':
-            audioUrl = '/audio/main.mp3';
-            break;
-        case '/elements.html':
-            audioUrl = '/audio/Facu.mp3';
-            break;
-        case '/Entrevistas.html':
-            audioUrl = '/audio/Entrevista.mp3';
-            break;
-        case '/fgv.html':
-            audioUrl = '/audio/fgv.mp3';
-            break;
-		case '/generic.html':
-			audioUrl = '/audio/gerenciadeProjetos.mp3';
-			break;
-		case '/ibmec.html':
-			audioUrl = '/audio/MBA.mp3';
-			break;
-		case '/Profissoes.html':
-            audioUrl = '/audio/Profi.mp3';
-            break;
-		case '/puc.html':
-            audioUrl = '/audio/PUC.mp3';
-            break;
-		case '/usp.html':
-            audioUrl = '/audio/USP.mp3';
-            break;
-		default:
-			audioUrl = '/audio/main.mp3';
-			break;
+	let isFileProtocol = window.location.protocol === 'file:';
 
-    }
-	
-    // Cria o elemento de áudio a partir do URL correto
-    audioElement = new Audio(audioUrl);
+
+	switch(page) {
+		case 'index.html':
+			audioUrl = isFileProtocol ? 'audio/main.mp3' : '/audio/main.mp3';
+			break;
+		case 'elements.html':
+			audioUrl = isFileProtocol ? 'audio/Facu.mp3' : '/audio/Facu.mp3';
+			break;
+		case 'Entrevistas.html':
+			audioUrl = isFileProtocol ? 'audio/Entrevista.mp3' : '/audio/Entrevista.mp3';
+			break;
+		case 'fgv.html':
+			audioUrl = isFileProtocol ? 'audio/fgv.mp3' : '/audio/fgv.mp3';
+			break;
+		case 'generic.html':
+			audioUrl = isFileProtocol ? 'audio/gerenciadeProjetos.mp3' : '/audio/gerenciadeProjetos.mp3';
+			break;
+		case 'ibmec.html':
+			audioUrl = isFileProtocol ? 'audio/MBA.mp3' : '/audio/MBA.mp3';
+			break;
+		case 'Profissoes.html':
+			audioUrl = isFileProtocol ? 'audio/Profi.mp3' : '/audio/Profi.mp3';
+			break;
+		case 'puc.html':
+			audioUrl = isFileProtocol ? 'audio/PUC.mp3' : '/audio/PUC.mp3';
+			break;
+		case 'usp.html':
+			audioUrl = isFileProtocol ? 'audio/USP.mp3' : '/audio/USP.mp3';
+			break;
+	}
+
+
+	if (audioUrl) {
+		audioElement = new Audio(audioUrl);
+	}
 }
 
 // Função que lida com o clique no mascote
