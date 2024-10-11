@@ -11,7 +11,7 @@
 - Professora: Monica Dias
 
 ### Descrição do Projeto
-Este projeto consiste na criação de um site explicativo sobre a área de TI, com foco em gerenciamento de projetos. Nosso objetivo é criar um website informativo que introduza uma pessoa interessada em ingressar na área de gerenciamento de projetos, apresentando profições e faculdades.
+Este projeto consiste na criação de um site explicativo sobre a área de TI, com foco em gerenciamento de projetos. Nosso objetivo é criar um website informativo que introduza uma pessoa interessada em ingressar na área de gerenciamento de projetos, apresentando profissões e faculdades.
 
 ### Status
 - Em desenvolvimento
