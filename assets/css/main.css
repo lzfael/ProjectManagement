@@ -105,7 +105,7 @@ input, select, textarea {
 	*, *:before, *:after {
 		box-sizing: inherit;
 	}
-	body {
+	.init {
 		background-color: #2e3141;
 		background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/fundoprof.jpg");
 		background-size: auto,
@@ -114,6 +114,10 @@ input, select, textarea {
  fixed;
 		background-position: center,
  center;
+ margin-top: -6.5em;
+                    padding-top: 6.5em;
+                    margin-bottom: -6.5em;
+                    padding-bottom: -8.5em;
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
