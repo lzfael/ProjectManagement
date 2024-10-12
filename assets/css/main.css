@@ -107,15 +107,13 @@ input, select, textarea {
 	}
 	body {
 		background-color: #2e3141;
-            background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/bg.jpg");
-            background-size: auto, cover;
-            background-attachment: fixed, fixed;
-            background-position: center;
-                    margin-top: -6.5em;
-                    padding-top: 6.5em;
-                    margin-bottom: -6.5em;
-                    padding-bottom: -8.5em;
-        
+		background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/fundoprof.jpg");
+		background-size: auto,
+ cover;
+		background-attachment: fixed,
+ fixed;
+		background-position: center,
+ center;
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
