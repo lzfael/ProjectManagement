@@ -4012,10 +4012,7 @@ input, select, textarea {
 			}
 
 		}
-        iframe{
-            width: 150;
-            height: 200;
-        }
+       
 		
 
 	@media screen and (max-width: 1280px) {
