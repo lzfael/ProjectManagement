@@ -114,10 +114,7 @@ input, select, textarea {
  fixed;
 		background-position: center,
  center;
- margin-top: -6.5em;
-                    padding-top: 6.5em;
-                    margin-bottom: -6.5em;
-                    padding-bottom: -8.5em;
+		
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
