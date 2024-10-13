@@ -165,23 +165,8 @@ function setupAudio() {
 		case 'Entrevistas.html':
 			audioUrl = isFileProtocol ? 'audio/Entrevista.mp3' : '/audio/Entrevista.mp3';
 			break;
-		case 'fgv.html':
-			audioUrl = isFileProtocol ? 'audio/fgv.mp3' : '/audio/fgv.mp3';
-			break;
-		case 'generic.html':
-			audioUrl = isFileProtocol ? 'audio/gerenciadeProjetos.mp3' : '/audio/gerenciadeProjetos.mp3';
-			break;
-		case 'ibmec.html':
-			audioUrl = isFileProtocol ? 'audio/MBA.mp3' : '/audio/MBA.mp3';
-			break;
 		case 'Profissoes.html':
 			audioUrl = isFileProtocol ? 'audio/Profi.mp3' : '/audio/Profi.mp3';
-			break;
-		case 'puc.html':
-			audioUrl = isFileProtocol ? 'audio/PUC.mp3' : '/audio/PUC.mp3';
-			break;
-		case 'usp.html':
-			audioUrl = isFileProtocol ? 'audio/USP.mp3' : '/audio/USP.mp3';
 			break;
 		    default:
 			audioUrl = isFileProtocol ? 'audio/main.mp3' : '/audio/main.mp3';
