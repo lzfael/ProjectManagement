@@ -105,6 +105,18 @@ input, select, textarea {
 	*, *:before, *:after {
 		box-sizing: inherit;
 	}
+	body{
+		background-color: #2e3141;
+		background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/bg.jpg");
+		background-size: auto,
+ cover;
+		background-attachment: fixed,
+ fixed;
+		background-position: center,
+ center;
+ margin-bottom: -6.5em;
+ padding-bottom: -8.5em;
+	}
 	.init {
 		background-color: #2e3141;
 		background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/bg.jpg");
@@ -4070,6 +4082,8 @@ input, select, textarea {
 			background-size: cover;
 			background-attachment: fixed;
 			background-position: center;
+			margin-top: -6.5em;
+			padding-top: 6.5em;
 		}
 
 	}

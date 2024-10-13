@@ -125,6 +125,18 @@ input, select, textarea {
 
 /* Type */
 
+body{
+	background-color: #2e3141;
+	background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/bg.jpg");
+	background-size: auto,
+cover;
+	background-attachment: fixed,
+fixed;
+	background-position: center,
+center;
+margin-bottom: -6.5em;
+padding-bottom: -8.5em;
+}
 	body, input, select, textarea {
 		color: #ffffff;
 		font-family: "Source Sans Pro", Helvetica, sans-serif;
@@ -4079,8 +4091,8 @@ input, select, textarea {
  cover;
 			background-position: center,
  center;
-			margin-top: -6.5em;
-			padding-top: 6.5em;
+ margin-top: -6.5em;
+ padding-top: 6.5em;
 		}
 
 	}
