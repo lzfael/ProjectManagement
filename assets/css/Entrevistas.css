@@ -73,6 +73,14 @@ input, select, textarea {
 	-ms-appearance: none;
 	appearance: none;
 }
+::-webkit-scrollbar{
+	width: 12px;
+	background-color: #171820;
+}
+::-webkit-scrollbar-thumb{
+	background-color: #45558d;
+}
+
 
 /* Basic */
 
