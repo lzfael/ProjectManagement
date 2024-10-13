@@ -159,7 +159,7 @@ function setupAudio() {
 		case 'index.html':
 			audioUrl = isFileProtocol ? 'audio/main.mp3' : '/audio/main.mp3';
 			break;
-		case 'elements.html':
+		case 'faculdades.html':
 			audioUrl = isFileProtocol ? 'audio/Facu.mp3' : '/audio/Facu.mp3';
 			break;
 		case 'Entrevistas.html':
